@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<button id="show-catalog">Mostrar Catálogo</button>
+<div id="catalog-output"></div>
+
+
+<div id="disk-details" style="display: none;">
+    <h2>Detalhes do Disco</h2>
+    <div id="details-content"></div>
+    <button id="close-details">Fechar</button>
+</div>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Discos</title>
+</head>
+
+<input type="text" id="search-input" placeholder="Pesquisar por título, artista ou gênero">
+<button id="search-button">Pesquisar</button>
+<div id="search-results"></div>
+
+
+<body>
+    <h1>Catálogo de Discos Musicais</h1>
+    <form id="add-disk-form">
+        <input type="text" name="title" placeholder="Título" required />
+        <input type="number" name="releaseYear" placeholder="Ano de Lançamento" required />
+        <input type="text" name="cover" placeholder="URL da Capa" required />
+        <input type="text" name="tracks" placeholder="Faixas (separadas por vírgula)" required />
+        <input type="text" name="genres" placeholder="Gêneros (separados por vírgula)" required />
+        <button type="submit">Adicionar Disco</button>
+    </form>
+    <div id="disk-list"></div>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
